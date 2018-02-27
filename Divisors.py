@@ -7,7 +7,7 @@ Create a program that asks the user for a number and then prints out a list of a
 num = int(input("Enter a number to divide by: "))
 var1, var2 = [int(x) for x in input("Enter two numbers to make a list here: ").split()]
 var2 = var2 + 1
-x = range ( var1, var2 )
-for elem in x:
+
+for elem in range ( var1, var2 ):
     if elem % num == 0:
         print(elem)
