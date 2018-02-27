@@ -12,11 +12,14 @@ Extras:
 1. Randomly generate two lists to test this
 2. Write this in one line of Python (don’t worry if you can’t figure this out at this point - we’ll get to it soon)
 '''
+import random
 
-a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+a = [random.randrange(1,101,1) for x in range (15)]
 
-b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+b = [random.randrange(1,101,1) for x in range (20)]
 
-for x in a:
-    if x in b:
-        print(x)
+print(a)
+
+print(b)
+
+print(set([x for x in a if x in b]))
