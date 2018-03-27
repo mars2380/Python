@@ -26,6 +26,3 @@ git remote rename origin old-origin
 git remote add origin https://gitlab.com/adimicoli/Python.git
 git push -u origin --all
 git push -u origin --tags
-
-
-This is a push test to my Github
